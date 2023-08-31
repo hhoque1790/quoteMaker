@@ -6,11 +6,7 @@ const { quotes } = require('./data');
 const { getRandomElement } = require('./utils');
 
 const PORT = process.env.PORT || 4001;
-//
-app.get('/', (req, res) => { 
-    res.send(`<h1>Hello</h1>`)
-})
-//
+
 app.use(express.static('public'));
 
 app.get('/api/quotes/random', (req, res) => {
